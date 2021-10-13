@@ -33,4 +33,15 @@ do
 num=$(($num+1))
 done
 
-#However, after all of these steps, we still have 100 tables. How do we get the relevant information out of these tables and combine that information?
+#step 7: get number of matches for mcrA and HSP70 for each proteome
+echo "Proteome,mcrA,HSP70" > Matches.txt
+for num in {1..50}
+do
+mcrA=$(cat results/proteome_"$num"_mcrA.fasta | grep -w mcrAgene_aligned | wc -l)
+hsp70=$(cat results/proteome_"$num"_hsp70.fasta | grep -w hsp70gene_aligned | wc -l)
+echo "Proteome_$num,$mcrA,$hsp70" >> Matches.txt
+done
+
+#step 8: make file with recommendations
+echo "Recommended-Proteome,mcrA,HSP70" > Recommendations.txt
+cat Matches.txt | grep -v -w "0" | sort -t , -k 3n | tail -n 4 >> Recommendations.txt
