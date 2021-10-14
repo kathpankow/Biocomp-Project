@@ -11,5 +11,5 @@ WP_010868356.1       -          hsp70gene_aligned    -              0.014   10.4
 # Target file:     proteomes/proteome_02.fasta
 # Option settings: ./hmmsearch --tblout results/proteome_2_hsp70.fasta results/hsp70gene_profile.fasta proteomes/proteome_02.fasta 
 # Current dir:     /afs/crc.nd.edu/user/k/kpankow/Private/Biocomputing/Biocomp-Project
-# Date:            Wed Oct 13 10:29:35 2021
+# Date:            Thu Oct 14 19:49:15 2021
 # [ok]

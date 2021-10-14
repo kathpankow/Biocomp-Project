@@ -45,3 +45,8 @@ done
 #step 8: make file with recommendations
 echo "Recommended-Proteome,mcrA,HSP70" > Recommendations.txt
 cat Matches.txt | grep -v -w "0" | sort -t , -k 3n | tail -n 4 >> Recommendations.txt
+echo "Recommendations are based 2 things:" >> Recommendations.txt
+echo "1. there must be at least one copy of each gene" >> Recommendations.txt
+echo "2. more copies of HSP70 are favorable" >> Recommendations.txt
+echo "Therefore proteome_03, proteome_42, proteome_45, and proteome_50 represent the best candidates based on that criteria." >> Recommendations.txt
+

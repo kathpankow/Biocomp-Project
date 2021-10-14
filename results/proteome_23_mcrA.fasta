@@ -11,5 +11,5 @@ WP_011954158.1       -          mcrAgene_aligned     -                  0 1017.1
 # Target file:     proteomes/proteome_23.fasta
 # Option settings: ./hmmsearch --tblout results/proteome_23_mcrA.fasta results/mcrAgene_profile.fasta proteomes/proteome_23.fasta 
 # Current dir:     /afs/crc.nd.edu/user/k/kpankow/Private/Biocomputing/Biocomp-Project
-# Date:            Wed Oct 13 10:29:33 2021
+# Date:            Thu Oct 14 19:49:13 2021
 # [ok]

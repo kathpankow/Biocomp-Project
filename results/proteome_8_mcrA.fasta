@@ -9,5 +9,5 @@
 # Target file:     proteomes/proteome_08.fasta
 # Option settings: ./hmmsearch --tblout results/proteome_8_mcrA.fasta results/mcrAgene_profile.fasta proteomes/proteome_08.fasta 
 # Current dir:     /afs/crc.nd.edu/user/k/kpankow/Private/Biocomputing/Biocomp-Project
-# Date:            Wed Oct 13 10:29:31 2021
+# Date:            Thu Oct 14 19:49:12 2021
 # [ok]
